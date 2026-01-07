@@ -2,10 +2,9 @@
   "name": "functions",
   "version": "1.0.0",
   "scripts": {
+    "dev": "bfast fs serve",
     "test": "echo \"no test\""
   },
-  "dependencies": {
-    "bfast": "^7.0.2"
-  },
+  "dependencies": {},
   "private": true
 }

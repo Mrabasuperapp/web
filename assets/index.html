@@ -29,19 +29,19 @@
         @keyframes breathe { from { transform: scale(1) } to { transform: scale(0.95)}}
         @keyframes zooooom { from { transform: scale(1) } to { transform: scale(10)}}
     </style>
-    <base href="/">
+    <base href="/assets/">
     <meta charset="UTF-8">
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
     <meta name="description" content="Mraba - Free POS & Inventory Management App for Small Business. Track sales, manage stock, print receipts, and grow your business.">
     <meta name="keywords" content="POS, point of sale, inventory management, stock management, sales tracking, small business, retail, shop management, receipt printer, business app">
     <meta name="author" content="Fahamutech">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Mraba - POS & Inventory Management App">
     <meta property="og:description" content="Free POS & Inventory Management for Small Business. Track sales, manage stock, print receipts.">
     <meta property="og:image" content="icons/Icon-512.png">
-    
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mraba - POS & Inventory Management App">
@@ -57,7 +57,7 @@
     <link rel="icon" type="image/png" href="favicon.png"/>
     <title>Mraba - Free POS & Inventory Management App | Small Business</title>
     <link rel="manifest" href="manifest.json">
-    
+
 </head>
 <body>
 <div id="loading">
@@ -68,7 +68,7 @@
 <script>
   // Register Firebase messaging service worker
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/firebase-messaging-sw.js')
+    navigator.serviceWorker.register('/assets/firebase-messaging-sw.js')
       .then((registration) => {
         console.log('Firebase messaging SW registered:', registration.scope);
       })

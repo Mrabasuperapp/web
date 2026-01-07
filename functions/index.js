@@ -1,7 +1,16 @@
-// const bfast = require('bfast');
-//
-// exports.helloWorld = bfast.functions().onHttpRequest('/hello', (request, response) => {
-//     // your logic
-//     response.send("Hello!");
-// });
 
+
+exports.home = {
+    method: 'GET',
+    path: '/',
+    onRequest: (request, response) => {
+        response.redirect("/assets/");
+    }
+}
+
+// exports.homeGuard = {
+//     path: '/',
+//     onGuard: (request, response, next) => {
+//         response.redirect("/assets/");
+//     }
+// }
