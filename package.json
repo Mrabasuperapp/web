@@ -2,7 +2,7 @@
   "name": "functions",
   "version": "1.0.0",
   "scripts": {
-    "dev": "bfast fs serve",
+    "dev": "bfast fs serve --port 3333",
     "test": "echo \"no test\""
   },
   "dependencies": {},

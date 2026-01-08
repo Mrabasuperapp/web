@@ -1,0 +1,37 @@
+/* TEAM */
+Company: Fahamutech
+Site: https://fahamutech.com
+Location: Tanzania
+Twitter: @fahamutech
+
+/* PRODUCT */
+Name: SmartStock Super App
+Description: Free POS & Inventory Management App for Small Business
+Version: 1.0.0
+Platform: Web, Android, iOS
+
+/* TECHNOLOGY */
+Framework: Flutter
+Backend: Node.js
+Database: PostgreSQL
+Hosting: Firebase Hosting
+Analytics: Google Analytics
+
+/* FEATURES */
+- Point of Sale (POS)
+- Inventory Management
+- Sales Tracking
+- Receipt Printing
+- Customer Management
+- Expense Tracking
+- Multi-branch Support
+- Real-time Sync
+- Offline Mode
+- Business Reports
+
+/* CONTACT */
+Email: smartstocktz@gmail.com
+Mobile: +255764943055
+Instagram: https://instagram.com/smartstocktz
+Website: https://smartstock.co.tz
+Company: https://smartstock.co.tz

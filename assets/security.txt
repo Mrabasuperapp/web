@@ -1,0 +1,10 @@
+# Security Policy for SmartStock Super App
+# https://smartstock.co.tz/.well-known/security.txt
+
+Contact: mailto:security@fahamutech.com
+Contact: https://fahamutech.com/contact
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: en, sw
+Canonical: https://smartstock.co.tz/.well-known/security.txt
+Policy: https://fahamutech.com/security-policy
+Hiring: https://fahamutech.com/careers

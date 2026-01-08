@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
     <style>
         body {
@@ -32,31 +32,264 @@
     <base href="/assets/">
     <meta charset="UTF-8">
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-    <meta name="description" content="Mraba - Free POS & Inventory Management App for Small Business. Track sales, manage stock, print receipts, and grow your business.">
-    <meta name="keywords" content="POS, point of sale, inventory management, stock management, sales tracking, small business, retail, shop management, receipt printer, business app">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>SmartStock Super App | POS & Inventory Management</title>
+    <meta name="title" content="SmartStock Super App | POS & Inventory Management for Small Business">
+    <meta name="description" content="SmartStock Super App - POS & Inventory Management for Small Business. Track sales, manage stock, print receipts, manage expenses, and grow your business. Works offline.">
+    <meta name="keywords" content="POS, point of sale, inventory management, stock management, sales tracking, small business, retail, shop management, receipt printer, business app, Tanzania, Africa, mauzo, biashara, duka, stock, inventory, free POS, offline POS">
     <meta name="author" content="Fahamutech">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="general">
+    <meta name="referrer" content="origin-when-cross-origin">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://smartstock.co.tz/">
+    
+    <!-- Alternate languages -->
+    <link rel="alternate" hreflang="en" href="https://smartstock.co.tz/">
+    <link rel="alternate" hreflang="sw" href="https://smartstock.co.tz/">
+    <link rel="alternate" hreflang="x-default" href="https://smartstock.co.tz/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Mraba - POS & Inventory Management App">
-    <meta property="og:description" content="Free POS & Inventory Management for Small Business. Track sales, manage stock, print receipts.">
-    <meta property="og:image" content="icons/Icon-512.png">
+    <meta property="og:url" content="https://smartstock.co.tz/">
+    <meta property="og:site_name" content="SmartStock Super App">
+    <meta property="og:title" content="SmartStock Super App | POS & Inventory Management">
+    <meta property="og:description" content="Free POS & Inventory Management for Small Business. Track sales, manage stock, print receipts. Works offline!">
+    <meta property="og:image" content="https://smartstock.co.tz/assets/icons/Icon-512.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:alt" content="SmartStock Super App Logo">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="sw_TZ">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mraba - POS & Inventory Management App">
-    <meta name="twitter:description" content="Free POS & Inventory Management for Small Business. Track sales, manage stock, print receipts.">
+    <meta name="twitter:site" content="@fahamutech">
+    <meta name="twitter:creator" content="@fahamutech">
+    <meta name="twitter:url" content="https://smartstock.co.tz/">
+    <meta name="twitter:title" content="SmartStock Super App | POS & Inventory Management">
+    <meta name="twitter:description" content="Free POS & Inventory Management for Small Business. Track sales, manage stock, print receipts. Works offline!">
+    <meta name="twitter:image" content="https://smartstock.co.tz/assets/icons/Icon-512.png">
+    <meta name="twitter:image:alt" content="SmartStock Super App Logo">
+    
     <!-- iOS meta tags & icons -->
     <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Mraba - POS">
+    <meta name="apple-mobile-web-app-title" content="SmartStock">
     <link rel="apple-touch-icon" href="icons/Icon-192.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/Icon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/Icon-192.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="icons/Icon-192.png">
+    
     <!-- Android meta tags & icons -->
-    <meta name="theme-color" content="#0E5FAEFF">
+    <meta name="theme-color" content="#0175C2" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0E5FAE" media="(prefers-color-scheme: dark)">
+    <meta name="msapplication-TileColor" content="#0175C2">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png"/>
-    <title>Mraba - Free POS & Inventory Management App | Small Business</title>
-    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    
+    <!-- OpenSearch -->
+    <link rel="search" type="application/opensearchdescription+xml" title="SmartStock Super App" href="/opensearch.xml">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "SoftwareApplication",
+                "@id": "https://smartstock.co.tz/#software",
+                "name": "SmartStock Super App",
+                "alternateName": ["SmartStock", "SmartStock Super App"],
+                "description": "Free POS & Inventory Management App for Small Business. Track sales, manage stock, print receipts, and grow your business.",
+                "url": "https://smartstock.co.tz",
+                "applicationCategory": "BusinessApplication",
+                "applicationSubCategory": ["Point of Sale", "Inventory Management", "Business Management"],
+                "operatingSystem": ["Web", "Android", "iOS"],
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD",
+                    "description": "Free plan available with premium upgrades"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.5",
+                    "ratingCount": "1000",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                },
+                "featureList": [
+                    "Point of Sale (POS)",
+                    "Inventory Management",
+                    "Sales Tracking",
+                    "Receipt Printing",
+                    "Customer Management",
+                    "Expense Tracking",
+                    "Multi-branch Support",
+                    "Real-time Sync",
+                    "Offline Mode",
+                    "Business Reports",
+                    "Employee Management",
+                    "Supplier Management",
+                    "Stock Transfers",
+                    "Invoice Generation"
+                ],
+                "screenshot": "https://smartstock.co.tz/assets/icons/Icon-512.png",
+                "softwareVersion": "1.0.0",
+                "downloadUrl": "https://play.google.com/store/apps/details?id=com.fahamutech.smartstock",
+                "installUrl": "https://smartstock.co.tz",
+                "permissions": "Works offline",
+                "storageRequirements": "50MB",
+                "author": {
+                    "@type": "Organization",
+                    "@id": "https://fahamutech.com/#organization"
+                }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://fahamutech.com/#organization",
+                "name": "Fahamutech",
+                "url": "https://fahamutech.com",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://smartstock.co.tz/assets/icons/Icon-512.png",
+                    "width": 512,
+                    "height": 512
+                },
+                "email": "smartstocktz@gmail.com",
+                "telephone": "+255764943055",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "TZ",
+                    "addressLocality": "Tanzania"
+                },
+                "sameAs": [
+                    "https://twitter.com/fahamutech",
+                    "https://facebook.com/fahamutech",
+                    "https://linkedin.com/company/fahamutech",
+                    "https://instagram.com/smartstocktz",
+                    "https://smartstock.co.tz"
+                ],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "customer support",
+                    "email": "smartstocktz@gmail.com",
+                    "telephone": "+255764943055",
+                    "availableLanguage": ["English", "Swahili"]
+                }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://smartstock.co.tz/#website",
+                "url": "https://smartstock.co.tz",
+                "name": "SmartStock Super App",
+                "description": "Free POS & Inventory Management App for Small Business",
+                "publisher": {
+                    "@type": "Organization",
+                    "@id": "https://fahamutech.com/#organization"
+                },
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": {
+                        "@type": "EntryPoint",
+                        "urlTemplate": "https://smartstock.co.tz/assets/#/inventory?search={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                },
+                "inLanguage": ["en", "sw"]
+            },
+            {
+                "@type": "WebApplication",
+                "@id": "https://smartstock.co.tz/#webapp",
+                "name": "SmartStock Super App",
+                "url": "https://smartstock.co.tz",
+                "applicationCategory": "BusinessApplication",
+                "browserRequirements": "Requires JavaScript. Requires HTML5.",
+                "softwareVersion": "1.0.0",
+                "operatingSystem": "Any"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://smartstock.co.tz/#breadcrumb",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://smartstock.co.tz"},
+                    {"@type": "ListItem", "position": 2, "name": "Sales", "item": "https://smartstock.co.tz/#/sales-hub"},
+                    {"@type": "ListItem", "position": 3, "name": "Inventory", "item": "https://smartstock.co.tz/#/inventory"},
+                    {"@type": "ListItem", "position": 4, "name": "Reports", "item": "https://smartstock.co.tz/#/reports/business"}
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://smartstock.co.tz/#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What is SmartStock Super App?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "SmartStock Super App is a business management application designed for small businesses. It helps you track sales, manage stock, print receipts, and grow your business."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is SmartStock Super App free?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, SmartStock Super App offers a free plan with essential features. Premium plans are available for businesses needing advanced features like multi-branch support and detailed analytics."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does SmartStock Super App work offline?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, SmartStock Super App works offline. Your data is synced automatically when you're back online, ensuring you never lose a sale."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can I use SmartStock Super App on multiple devices?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, SmartStock Super App syncs across all your devices in real-time. Use it on web, Android, or iOS devices."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What features does SmartStock Super App offer?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "SmartStock Super App offers Point of Sale, Inventory Management, Sales Tracking, Receipt Printing, Customer Management, Expense Tracking, Multi-branch Support, Real-time Sync, Offline Mode, and Business Reports."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 
 </head>
 <body>

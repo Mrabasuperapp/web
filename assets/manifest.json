@@ -1,13 +1,66 @@
 {
-    "name": "Mraba - POS & Inventory Management",
-    "short_name": "Mraba POS",
+    "name": "SmartStock Super App",
+    "short_name": "SmartStock",
+    "description": "Free POS & Inventory Management App for Small Business. Track sales, manage stock, print receipts, and grow your business.",
     "start_url": ".",
+    "scope": "/assets/",
+    "id": "mraba-pos",
     "display": "standalone",
+    "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Free POS & Inventory Management App for Small Business. Track sales, manage stock, print receipts, and grow your business.",
     "orientation": "natural",
     "prefer_related_applications": false,
+    "categories": ["business", "finance", "productivity", "utilities"],
+    "lang": "en",
+    "dir": "ltr",
+    "iarc_rating_id": "",
+    "shortcuts": [
+        {
+            "name": "New Sale",
+            "short_name": "Sale",
+            "description": "Record a new sale",
+            "url": "./#/sales/register/inventory",
+            "icons": [{"src": "icons/Icon-192.png", "sizes": "192x192", "type": "image/png"}]
+        },
+        {
+            "name": "Inventory",
+            "short_name": "Stock",
+            "description": "Manage inventory",
+            "url": "./#/inventory",
+            "icons": [{"src": "icons/Icon-192.png", "sizes": "192x192", "type": "image/png"}]
+        },
+        {
+            "name": "Reports",
+            "short_name": "Reports",
+            "description": "View business reports",
+            "url": "./#/reports/business",
+            "icons": [{"src": "icons/Icon-192.png", "sizes": "192x192", "type": "image/png"}]
+        },
+        {
+            "name": "Expenses",
+            "short_name": "Expenses",
+            "description": "Track expenses",
+            "url": "./#/expenses",
+            "icons": [{"src": "icons/Icon-192.png", "sizes": "192x192", "type": "image/png"}]
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "SmartStock Super App Dashboard"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "SmartStock Super App Mobile View"
+        }
+    ],
     "icons": [
         {
             "src": "icons/Icon-192.png",
@@ -31,5 +84,16 @@
             "type": "image/png",
             "purpose": "maskable"
         }
-    ]
+    ],
+    "related_applications": [
+        {
+            "platform": "play",
+            "url": "https://play.google.com/store/apps/details?id=com.fahamutech.smartstock",
+            "id": "com.fahamutech.smartstock"
+        }
+    ],
+    "handle_links": "preferred",
+    "launch_handler": {
+        "client_mode": "navigate-existing"
+    }
 }
