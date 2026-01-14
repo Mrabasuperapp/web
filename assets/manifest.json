@@ -3,7 +3,6 @@
     "short_name": "SmartStock",
     "description": "Free POS & Inventory Management App for Small Business. Track sales, manage stock, print receipts, and grow your business.",
     "start_url": ".",
-    "scope": "/assets/",
     "id": "mraba-pos",
     "display": "standalone",
     "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],

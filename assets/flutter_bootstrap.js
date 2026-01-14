@@ -39,7 +39,7 @@ _flutter.buildConfig = {"engineRevision":"1527ae0ec577a4ef50e65f6fefcfc1326707d9
 
 _flutter.loader.load({
     serviceWorker: {
-      serviceWorkerVersion: "858470098",
+      serviceWorkerVersion: "3650307729",
     },
     onEntrypointLoaded: function(engineInitializer) {
       var loading = document.querySelector('#loading')
