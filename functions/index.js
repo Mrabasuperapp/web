@@ -16,7 +16,7 @@ const APP_ROUTES = [
     { path: '/#/login', name: 'Login', description: 'Sign in to your SmartStock account', changefreq: 'monthly', priority: 0.8 },
     { path: '/#/register', name: 'Register', description: 'Create a new SmartStock account for your business', changefreq: 'monthly', priority: 0.9 },
     { path: '/#/discover', name: 'Discover', description: 'Discover features and mini apps', changefreq: 'weekly', priority: 0.7 },
-    
+
     // Sales Module
     { path: '/#/sales-hub', name: 'Sales Hub', description: 'Manage all your sales, customers, and expenses in one place', changefreq: 'daily', priority: 0.9 },
     { path: '/#/sales/register/inventory', name: 'Register Sale', description: 'Record new sales from your inventory', changefreq: 'daily', priority: 0.9 },
@@ -25,11 +25,11 @@ const APP_ROUTES = [
     { path: '/#/sales/sold-items', name: 'Sold Items', description: 'Track items sold over time', changefreq: 'daily', priority: 0.7 },
     { path: '/#/sales/customers', name: 'Customers', description: 'Manage your customer database', changefreq: 'weekly', priority: 0.7 },
     { path: '/#/sales/orders', name: 'Online Orders', description: 'Manage online orders from your store', changefreq: 'daily', priority: 0.7 },
-    
+
     // Expenses Module
     { path: '/#/expenses', name: 'Expenses', description: 'Track and manage business expenses', changefreq: 'daily', priority: 0.8 },
     { path: '/#/expenses/schedules', name: 'Recurring Expenses', description: 'Set up and manage recurring expenses', changefreq: 'weekly', priority: 0.6 },
-    
+
     // Inventory Module
     { path: '/#/inventory', name: 'Inventory', description: 'Complete inventory management dashboard', changefreq: 'daily', priority: 0.9 },
     { path: '/#/inventory/products', name: 'Products', description: 'Manage your product catalog', changefreq: 'daily', priority: 0.9 },
@@ -42,7 +42,7 @@ const APP_ROUTES = [
     { path: '/#/inventory/transfers/send', name: 'Send Transfer', description: 'Send stock to another branch', changefreq: 'weekly', priority: 0.5 },
     { path: '/#/inventory/transfers/receive', name: 'Receive Transfer', description: 'Receive stock from another branch', changefreq: 'weekly', priority: 0.5 },
     { path: '/#/inventory/report', name: 'Stock Report', description: 'Detailed inventory and stock reports', changefreq: 'daily', priority: 0.7 },
-    
+
     // Reports Module
     { path: '/#/reports/cash-overview', name: 'Cash Overview', description: 'Overview of cash flow and transactions', changefreq: 'daily', priority: 0.8 },
     { path: '/#/performance-hub', name: 'Performance Reports', description: 'Business performance analytics and reports', changefreq: 'daily', priority: 0.8 },
@@ -52,18 +52,18 @@ const APP_ROUTES = [
     { path: '/#/reports/customer-performance', name: 'Customer Analytics', description: 'Analyze customer purchasing patterns', changefreq: 'daily', priority: 0.7 },
     { path: '/#/reports/business', name: 'Business Reports', description: 'Comprehensive business reports and insights', changefreq: 'daily', priority: 0.8 },
     { path: '/#/transactions', name: 'Transactions', description: 'View all business transactions', changefreq: 'daily', priority: 0.8 },
-    
+
     // Accountant Module
     { path: '/#/accountant', name: 'Accountant Dashboard', description: 'Financial management and accounting tools', changefreq: 'daily', priority: 0.8 },
-    
+
     // Analytics Module (HQ)
     { path: '/#/analytics', name: 'Analytics', description: 'Advanced business analytics dashboard', changefreq: 'daily', priority: 0.7 },
-    
+
     // Messaging Module
     { path: '/#/messages', name: 'Messages', description: 'Team messaging and communication', changefreq: 'daily', priority: 0.6 },
     { path: '/#/messages/direct', name: 'Direct Messages', description: 'Private conversations with team members', changefreq: 'daily', priority: 0.5 },
     { path: '/#/messages/broadcasts', name: 'Broadcasts', description: 'Shop-wide announcements and broadcasts', changefreq: 'weekly', priority: 0.5 },
-    
+
     // Profile & Settings
     { path: '/#/profile', name: 'Profile', description: 'Manage your account and business profile', changefreq: 'weekly', priority: 0.6 },
     { path: '/#/profile/update', name: 'Update Profile', description: 'Update your personal information', changefreq: 'monthly', priority: 0.4 },
@@ -104,7 +104,8 @@ exports.home = {
     method: 'GET',
     path: '/',
     onRequest: (request, response) => {
-        response.redirect("/assets/");
+        // response.redirect("/assets/");
+        response.redirect("https://kanida.web.app");
     }
 };
 
@@ -173,13 +174,13 @@ exports.sitemapXml = {
     path: '/sitemap.xml',
     onRequest: (request, response) => {
         const lastmod = new Date().toISOString().split('T')[0];
-        
+
         let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 `;
-        
+
         APP_ROUTES.forEach(route => {
             xml += `  <url>
     <loc>${BASE_URL}${route.path}</loc>
@@ -189,9 +190,9 @@ exports.sitemapXml = {
   </url>
 `;
         });
-        
+
         xml += `</urlset>`;
-        
+
         response.setHeader('Content-Type', 'application/xml');
         response.setHeader('Cache-Control', 'public, max-age=3600');
         response.send(xml);
@@ -206,7 +207,7 @@ exports.sitemapIndexXml = {
     path: '/sitemap-index.xml',
     onRequest: (request, response) => {
         const lastmod = new Date().toISOString().split('T')[0];
-        
+
         const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
@@ -214,7 +215,7 @@ exports.sitemapIndexXml = {
     <lastmod>${lastmod}</lastmod>
   </sitemap>
 </sitemapindex>`;
-        
+
         response.setHeader('Content-Type', 'application/xml');
         response.setHeader('Cache-Control', 'public, max-age=3600');
         response.send(xml);
@@ -465,7 +466,7 @@ exports.routesMap = {
         response.setHeader('Content-Type', 'application/json');
         response.setHeader('Cache-Control', 'public, max-age=3600');
         response.setHeader('Access-Control-Allow-Origin', '*');
-        
+
         // Group routes by module
         const modules = {
             dashboard: APP_ROUTES.filter(r => ['/', '/#/splash', '/#/discover'].includes(r.path)),
@@ -478,7 +479,7 @@ exports.routesMap = {
             messaging: APP_ROUTES.filter(r => r.path.includes('/messages')),
             profile: APP_ROUTES.filter(r => r.path.includes('/profile') || r.path.includes('/services') || r.path.includes('/payment')),
         };
-        
+
         response.json({
             total: APP_ROUTES.length,
             baseUrl: BASE_URL,
@@ -499,7 +500,7 @@ exports.jsonLd = {
         response.setHeader('Content-Type', 'application/ld+json');
         response.setHeader('Cache-Control', 'public, max-age=3600');
         response.setHeader('Access-Control-Allow-Origin', '*');
-        
+
         const schema = {
             "@context": "https://schema.org",
             "@graph": [
@@ -680,7 +681,7 @@ exports.jsonLd = {
                 }
             ]
         };
-        
+
         response.json(schema);
     }
 };
